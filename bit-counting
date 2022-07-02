@@ -1,0 +1,5 @@
+var countBits = function(n) {
+  // takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number
+  var result = n.toString(2).match(/1/g) != null ? n.toString(2).match(/1/g).length : 0;
+  return result;
+};
